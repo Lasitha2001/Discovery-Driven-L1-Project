@@ -196,7 +196,6 @@ void loop()
     feedbackMsg = "You Win! Game Completed.";
     break;
   }
-  // level3();
 }
 
 void level1()
@@ -236,7 +235,6 @@ void level1()
           {
             Serial.println("Red detected, Well done!");
             feedbackMsg = "Well Done!";
-            //randomNumberLvl1 = random(0, 3);
             randomNumberLvl1 = getRandomExcluding(0,3,0);
             success = true;
             gate();
@@ -247,7 +245,6 @@ void level1()
           {
             Serial.println("Green detected, Well done!");
             feedbackMsg = "Well Done!";
-            //randomNumberLvl1 = random(0, 3);
             randomNumberLvl1 = getRandomExcluding(0,3,1);
             success = true;
             gate();
@@ -258,7 +255,6 @@ void level1()
           {
             Serial.println("Blue detected, Well done!");
             feedbackMsg = "Well Done!";
-            //randomNumberLvl1 = random(0, 3);
             randomNumberLvl1 = getRandomExcluding(0,3,2);
             success = true;
             gate();
@@ -347,7 +343,7 @@ void level2()
           {
             Serial.println("RFID card for Number 1 detected, Well done!");
             feedbackMsg = "Well done!";
-            //randomNumberLvl2 = random(1, 7); // Generates a number between 1 and 6
+            // Generates a number between 1 and 6
             randomNumberLvl2 = getRandomExcluding(1,7,1);
             success = true;
             gate();
@@ -358,7 +354,7 @@ void level2()
           {
             Serial.println("RFID card for Number 2 detected, Well done!");
             feedbackMsg = "Well done!";
-            //randomNumberLvl2 = random(1, 7); // Generates a number between 1 and 6
+            // Generates a number between 1 and 6
             randomNumberLvl2 = getRandomExcluding(1,7,2);
             success = true;
             gate();
@@ -369,7 +365,7 @@ void level2()
           {
             Serial.println("RFID card for Number 3 detected, Well done!");
             feedbackMsg = "Well done!";
-            //randomNumberLvl2 = random(1, 7); // Generates a number between 1 and 6
+            // Generates a number between 1 and 6
             randomNumberLvl2 = getRandomExcluding(1,7,3);
             success = true;
             gate();
@@ -380,7 +376,7 @@ void level2()
           {
             Serial.println("RFID card for Number 4 detected, Well done!");
             feedbackMsg = "Well done!";
-            //randomNumberLvl2 = random(1, 7); // Generates a number between 1 and 6
+            // Generates a number between 1 and 6
             randomNumberLvl2 = getRandomExcluding(1,7,4);
             success = true;
             gate();
@@ -391,7 +387,7 @@ void level2()
           {
             Serial.println("RFID card for Number 5 detected, Well done!");
             feedbackMsg = "Well done!";
-            //randomNumberLvl2 = random(1, 7); // Generates a number between 1 and 6
+            // Generates a number between 1 and 6
             randomNumberLvl2 = getRandomExcluding(1,7,5);
             success = true;
             gate();
@@ -402,7 +398,7 @@ void level2()
           {
             Serial.println("RFID card for Number 6 detected, Well done!");
             feedbackMsg = "Well done!";
-            //randomNumberLvl2 = random(1, 7); // Generates a number between 1 and 6
+            // Generates a number between 1 and 6
             randomNumberLvl2 = getRandomExcluding(1,7,6);
             success = true;
             gate();

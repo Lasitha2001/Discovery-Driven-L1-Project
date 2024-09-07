@@ -30,3 +30,8 @@
 ### _Level 3: Material Identification (Identify the material of the object)_ 
 ### _Level 4: Number and Color Identification (Identify the number and color of the cardboard box)_ 
 ### _Level 5: Mathematical Operations (Solve a math problem and choose the correct numbered box)_
+
+## Project Overview
+**Project Name** : Discovery Driven Numerical, Material, Chromatic Exploration.
+
+**Team Members** : <a href="https://github.com/Lasitha2001" target="_blank">@Lasitha2001</a>, <a href="https://github.com/JehanPinto" target="_blank">@JehanPinto</a>,<a href="https://github.com/saknarajapakshe" target="_blank">@saknarajapakshe</a>,<a href="https://github.com/gimhanijayamanna" target="_blank">@gimhanijayamanna</a>,<a href="https://github.com/VishwaJaya01" target="_blank">@VishwaJaya01</a>

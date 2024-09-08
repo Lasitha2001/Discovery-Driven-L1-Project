@@ -1,37 +1,89 @@
 # **Discovery Driven Numerical, Material, Chromatic Exploration**
 
-###  _Suitable for age 5 - 12 years_ 
-###  _Charging the battery can only be operated by adults at all times_
-###  _Please keep this manual for future reference as it contains_
+# Discovery-Driven Game
 
-## About Our Product
+This project is an interactive game using an ESP32, various sensors, and RFID technology. The game consists of multiple levels, each with unique challenges that test different skills and knowledge.
 
-### This project introduces an innovative and interactive educational hardware solution designed to captivate children's interest in the realms of science and in programmable tools for cognitive development, our initiative emphasizes the fusion of physical and digital elements, creating a dynamic learning experience. This game aims to deliver an entertaining and educational game for children, fostering early engagement with technology and introducing a fresh perspective on learning. Please read the manuals carefully before using this product. You can get correct operation method, simple and detailed installation procedure.
+## Game Overview
 
-## Methodology
+The game is divided into 5 levels, each with increasing complexity:
 
-* The robotic car navigates to the object on the floor. 
-* The robotic arm grasps the object, performs necessary movements, and turns counterclockwise. 
-* The arm gently places the object onto the stage, allowing it to slide down an inclined plane to the sensing area. 
-* The object is identified and processed by various sensors in the sensing area. 
-* The processed information is sent to a web server, providing the game challenge to the user. After processing, the object is automatically removed via a gate at the end of the processing area.
+1. Color Recognition
+2. Number Recognition
+3. Material Recognition
+4. Color and Number Combination
+5. Basic Arithmetic
 
-## How to play
+Players interact with the game using RFID cards and various objects, which are detected by different sensors.
 
-* The game consists of 5 levels.
-* The game starts at Level 1. After completing Level 5, the game ends with a congratulatory message.
-* Follow the instructions provided in the website to complete each level.
-* Before starting a level, always make sure to place the boxes so that the white cross marks (X) on the boxes are facing up.
+## Game Levels
 
+### Level 1: Color Recognition
 
-## Levels
-### _Level 1: Colour Identification (Identify the colour of the cardboard box)_ 
-### _Level 2: Number Identification (Identify the number on the cardboard box)_ 
-### _Level 3: Material Identification (Identify the material of the object)_ 
-### _Level 4: Number and Color Identification (Identify the number and color of the cardboard box)_ 
-### _Level 5: Mathematical Operations (Solve a math problem and choose the correct numbered box)_
+- Player is asked to place a Red, Green, or Blue RFID card.
+- Must complete 2 correct placements to advance.
 
-## Project Overview
-**Project Name** : Discovery Driven Numerical, Material, Chromatic Exploration.
+### Level 2: Number Recognition
 
-**Team Members** : <a href="https://github.com/Lasitha2001" target="_blank">@Lasitha2001</a>, <a href="https://github.com/JehanPinto" target="_blank">@JehanPinto</a>,<a href="https://github.com/saknarajapakshe" target="_blank">@saknarajapakshe</a>,<a href="https://github.com/gimhanijayamanna" target="_blank">@gimhanijayamanna</a>,<a href="https://github.com/VishwaJaya01" target="_blank">@VishwaJaya01</a>
+- Player is asked to place an RFID card corresponding to numbers 1-6.
+- Must complete 2 correct placements to advance.
+
+### Level 3: Material Recognition
+
+- Player is asked to place objects made of different materials:
+  - Metal (detected by inductive sensor)
+  - Black plastic (detected by combination of ultrasonic and IR sensors)
+  - Rigid form (detected by combination of sensors)
+  - Wood (detected by RFID)
+- Must complete 3 correct placements to advance.
+
+### Level 4: Color and Number Combination
+
+- Player is asked to place specific color-number combination RFID cards.
+- Must complete 2 correct placements to advance.
+
+### Level 5: Basic Arithmetic
+
+- Player is presented with simple arithmetic questions.
+- Must answer correctly by placing the appropriate RFID card representing the answer.
+- Must complete 2 correct answers to finish the game.
+
+## Hardware Components
+
+- ESP32 microcontroller
+- MFRC522 RFID reader
+- Ultrasonic sensor
+- IR sensor
+- Inductive sensor
+- Servo motor (for gate control)
+
+## Software Features
+
+- Web server for real-time game status updates
+- Multi-level game logic
+- Random question generation for each level
+- Sensor fusion for object detection and classification
+
+## How to Play
+
+1. Connect to the ESP32's Wi-Fi network (SSID: "Discovery Driven", Password: "123456789")
+2. Open a web browser and navigate to the ESP32's IP address
+3. Follow the instructions displayed on the web page for each level
+4. Place the correct RFID card or object on the sensor area
+5. The gate will open if the answer is correct, allowing you to proceed
+6. Complete all levels to win the game
+
+## Future Improvements
+
+- Add more levels or increase the complexity of existing levels
+- Implement a scoring system
+- Add sound effects or visual feedback using additional hardware
+- Create a mobile app interface for better user experience
+
+## Team Members
+
+- [@Lasitha2001](https://github.com/Lasitha2001)
+- [@JehanPinto](https://github.com/JehanPinto)
+- [@saknarajapakshe](https://github.com/saknarajapakshe)
+- [@gimhanijayamanna](https://github.com/gimhanijayamanna)
+- [@VishwaJaya01](https://github.com/VishwaJaya01)
